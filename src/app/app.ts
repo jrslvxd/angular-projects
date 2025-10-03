@@ -12,7 +12,7 @@ import { Tasks } from './tasks/tasks';
   styleUrl: './app.css',
 })
 export class App {
-  selectedUserId = 'u1';
+  selectedUserId?: string;
   users = DUMMY_USERS;
 
   get selectedUser() {
