@@ -1,6 +1,6 @@
 <div class="backdrop" (click)="onCancel()"></div>
 <dialog open>
-  <form action="">
+  <form (ngSubmit)="onSubmit()">
     <p>
       <label for="title">Title</label>
       <input type="text" name="title" id="title" [(ngModel)]="enteredTile" />
